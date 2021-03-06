@@ -11,5 +11,7 @@ namespace apiPersona.Models
         public DataContext():base("DefaultConnection")        //Constructor
         {
         }
+
+        public System.Data.Entity.DbSet<apiPersona.Models.Person> People { get; set; }
     }
 }
